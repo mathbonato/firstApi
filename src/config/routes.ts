@@ -9,8 +9,7 @@ routes.get("/", (request: Request, response: Response) => {
 
 routes.get("/products",  new ProductController().list);
 routes.post("/products",  new ProductController().create);
-routes.put("/product/:id",  new ProductController().update);
-routes.delete("/product/:id",  new ProductController().delete);
-
+routes.put("/products/:id",  new ProductController().update);
+routes.delete("/products/:id",  new ProductController().delete);
 
 export { routes };
